@@ -8,6 +8,14 @@ body {
     color: hsla(0, 0%, 30%, 0.9);
 }
 
+h2 {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 button {
     background-color: #4d4d4d;
     color: seashell;
@@ -15,6 +23,11 @@ button {
     padding: 8px ;
     width: 100%;
     font-size: 1rem;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template: 1fr / 60% 40%;
 }
 
 /* Nav Section */
@@ -54,11 +67,6 @@ nav li {
 }
 
 /* Main Content */
-.grid-container {
-    display: grid; 
-    grid-template: 1fr / 60% 40%;
-}
-
 .section-container {
     margin-top: 2rem;
 }
@@ -116,14 +124,6 @@ nav li {
     margin-top: 2rem;
 }
 
-.learn h2 {
-    text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 0;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
 .course-container {
     display: flex;
     flex-wrap: wrap;
@@ -145,4 +145,41 @@ nav li {
 
 .course-text {
     padding: 0.5rem 1rem;
+}
+
+/* Thesis exhibit */
+.exhibit-a,
+.exhibit-b,
+.exhibit-c {
+}
+
+.exhibit-a video {
+    width: 100%;
+    height: auto;
+}
+
+.exhibit-b,
+.exhibit-c {
+    display: flex;
+}
+
+.exhibit-b img,
+.exhibit-c img {
+    width: 35%;
+    padding: 1rem;
+}
+
+.exhibit-a {
+    grid-area: 1 / 1 / 1 / 1;
+    padding: 1.5rem;
+    padding-top: 2rem;
+}
+
+.exhibit-b {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.exhibit-c {
+    grid-area: 2 / 2 / 2 / 2;
+
 }
