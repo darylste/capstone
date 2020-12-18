@@ -3,7 +3,21 @@ html {
     font-size: 16px;
 }
 
-/* Header */
+body {
+    font-family: sans-serif;
+    color: hsla(0, 0%, 30%, 0.9);
+}
+
+button {
+    background-color: #4d4d4d;
+    color: seashell;
+    border: unset;
+    padding: 8px ;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Nav Section */
 header {
     display: flex;
     height: 4rem;
@@ -13,10 +27,26 @@ header {
 
 nav {
     display: flex;
-    justify-self: flex-end;
+    color: hsl(0, 0%, 30%);
 }
 nav li {
     display: inline-flex;
     margin: auto 1rem;
     align-content: flex-end;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #bfbfbf;
+    display: flex;
+}
+
+.banner img {
+    width: 55%;
+    margin: 2rem 1.5rem;
+}   
+
+.banner-text {
+    width: 30%;
+    align-self: center;
 }
