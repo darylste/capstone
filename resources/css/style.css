@@ -34,32 +34,17 @@ button {
     background-color:  #e6e6e6;
 }
 
-.left,
-.right {
-    display: flex;
-}
-
-.left {
-    width: 35%;
-}
-
-.right {
-    width: 65%;
-    justify-content: flex-end;
-}
-
 /* Nav Section */
 header,
 footer {
     display: flex;
+    justify-content: space-between;
     height: 4rem;
-    width: 100%;
     margin: auto 1.5rem;
 }
 
 header span {
     font-size: 1.25rem;
-    align-self: center;
 }
 
 .bold {
@@ -68,10 +53,20 @@ header span {
 
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
 nav {
     display: flex;
     color: hsl(0, 0%, 30%);
 }
+
+nav img {
+    display: none;
+}
+
 nav li,
 footer li {
     display: inline-flex;
@@ -122,7 +117,8 @@ footer li {
 .orientation img,
 .campus img,
 .guest-lecture img {
-    width: 35%;
+    max-width: 35%;
+    height: auto;
     margin: 1rem;
 }
 
@@ -189,7 +185,8 @@ footer li {
 
 .exhibit-b img,
 .exhibit-c img {
-    width: 35%;
+    max-width: 35%;
+    height: auto;
     padding: 1rem;
 }
 
@@ -207,8 +204,23 @@ footer li {
     grid-area: 2 / 2 / 2 / 2;
 
 }
+
 /* Footer */
 footer {
     border-top: 1px solid  grey;
+    align-items: flex-end;
 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px){
+    header span {
+        visibility: hidden;
+    }
+    header li {
+        visibility: hidden;
+    }
+    header img {
+        display: inline;
+    }
 }
